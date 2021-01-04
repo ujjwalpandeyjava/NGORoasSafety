@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../style/loginStyle.css">
+    <title>Login with model</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../image/logo.png" alt="Home logo" width="100px" height="auto"
+                        style="margin: 0px; padding: 0px;">
+                </a>
+                <a href="">
+                    <li class="list">Home</li>
+                </a>
+                <a href="">
+                    <li class="list"></li>
+                </a>
+                <a href="">
+                    <li class="list"></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="wrap" class="">
+        <span onclick="TapClose()">X</span>
+        <form action="">
+            <h2>Welcome</h2>
+            <label>
+                <input type="text" placeholder="Enter Id"></label><br>
+            <label>
+                <input type="password" placeholder="Enter Password"></label><br>
+            <label>
+                <button type="submit" id="Log_in">Log in</button></label><br>
+        </form>
+        <button id="openForm" onclick="TapOpen()">
+            Log in here</button>
+    </div>
+    <script>
+        function TapOpen() {
+            document.getElementById('wrap').classList.add('open')
+        }
+        function TapClose() {
+            document.getElementById('wrap').classList.remove('open')
+        }
+    </script>
+</body>
+
+</html>

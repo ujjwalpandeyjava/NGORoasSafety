@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0; scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient(260deg, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228));
+}
+.widget-list {
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+.list ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+    border-radius: 8px;
+}
+.list ul li {
+    margin: 2px 5px;
+    padding: 13px 46px;
+    background-color: aqua;
+    color: black;
+    border-radius: 4px;
+}
+ul {
+    align-items: center;
+}
+ul a {
+    list-style: none;
+    text-decoration: none;
+    text-emphasis-color: yellow;
+}
+
+.curved {
+    min-height: 50vh;
+    background: #ff9100;
+    color: #fff;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.curved .curvedContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.curved h1 {
+    font-size: 3rem;
+    font-family: "Segoe UI", cursive, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.curved p {
+    font-family: cursive;
+}
+
+.curved svg {
+    display: block;
+}
+
+.content {
+    margin: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.btn-search:hover {
+    background-color:#0099FF;
+    outline: 1px solid white;
+    color: white;
+    oul
+}
+.curver nav{
+    font-size: 2rem;
+}
