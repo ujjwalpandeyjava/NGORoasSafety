@@ -76,4 +76,54 @@ p {
 }
 .content {
     top: 100vh;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Form */
+.form{
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    width: 100%;
+}
+form, .group{
+    position: relative;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    font-size: 1.4rem;
+}
+.group {
+    display: flex;
+    justify-content: space-evenly;
+}
+.group span{
+    display: inline-block;
+    width: 18%;
+}
+.form input{
+    max-width: 550px;
+    width: 75%;
+    right: 40px;
+}
+.form input,.form input:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1.4px solid blue;
+}
+form>button{
+    padding: 5px 8px;
+    background-color: #acd8ed;
+    margin: auto;
+    border: none;
+    box-shadow: inset 0 0 4px 0 #f3efef, 0 0 2.5px 0 blue;;
+    /* border: 1px solid #7d1f7d; */
+    display:block;
+}
+form > button:hover{
+    background-color: #8f808000;
+    border: 1px solid blue;
+
 }
