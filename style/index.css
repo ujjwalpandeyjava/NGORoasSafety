@@ -106,9 +106,6 @@ p {
 .content {
     top: 100vh;
 }
-
-#mainQoute {
-}
 .content .realTalk {
     background: linear-gradient(260deg, rgba(127, 127, 213, 0.685), rgba(134, 168, 231, 0.568), rgb(145, 234, 228));
     padding: 20px 30px;
