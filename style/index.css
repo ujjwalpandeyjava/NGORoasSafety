@@ -1,88 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Playfair+Display:ital,wght@1,500&display=swap");
+
 * {
     margin: 0;
-    padding: 0; scroll-behavior: smooth;
+    padding: 0;
+    scroll-behavior: smooth;
 }
-body{
-    background: linear-gradient(260deg, rgb(127, 127, 213), rgb(134, 168, 231), rgb(145, 234, 228));
+body {
+    min-width: 469px;
 }
-.widget-list {
-    font-size: 2rem;
-    visibility: hidden;
+.header {
+    position: relative;
 }
-
-.list ul {
+.navbar {
+    position: sticky;
+}
+.navbar ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 1.5rem;
-    background-color: black;
-    color: white;
-    padding: 6px 0;
-    border-radius: 8px;
-}
-.list ul li {
-    margin: 2px 5px;
-    padding: 13px 46px;
-    background-color: aqua;
-    color: black;
-    border-radius: 4px;
-}
-ul {
     align-items: center;
+    justify-content: start;
 }
-ul a {
+.navbar ul li {
     list-style: none;
+    padding: 5px 12px;
+}
+.navbar ul li a {
     text-decoration: none;
-    text-emphasis-color: yellow;
+    font-size: 1.35rem;
+    color: black;
 }
-
-.curved {
-    min-height: 50vh;
-    background: #ff9100;
-    color: #fff;
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-
-.curved .curvedContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
+.navbar-ul {
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0;
+    background-color: #5555ca0c;
+    top: 0px;
+    min-height: 90px;
+    height: 10vh;
 }
-
-.curved h1 {
-    font-size: 3rem;
-    font-family: "Segoe UI", cursive, Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.curved p {
-    font-family: cursive;
-}
-
-.curved svg {
-    display: block;
-}
-
-.content {
-    margin: 10px;
-    padding: 16px;
+li {
+    list-style: none;
+    padding: 8px 24px;
     text-align: center;
 }
-
-.btn-search:hover {
-    background-color:#0099FF;
-    outline: 1px solid white;
-    color: white;
-    oul
+li a {
+    text-decoration: none;
 }
-.curver nav{
+li:hover {
+    background-color: #a09fb736;
+}
+h2 {
+    font-family: "Playfair Display", serif;
+}
+p {
+    font-family: "Lato", sans-serif;
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    /* Set background-image */
+    /*      Way one     */
+    /*
+    background-image: url("photos/forest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* Way two */
+    background: url("../image/road_1.jpg") no-repeat center center/cover;
+    /*      Way three */
+    /*
+    background: url('photos/forest.jpg') center no-repeat ;
+    background-size: cover; */
+
+    width: 100%;
+    height: 100vh;
+    z-index: -12;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* margin: 15px; */
+    padding: 8px 12px;
+    text-align: center;
+    height: 87vh;
+    justify-content: center;
+    opacity: 1;
+    z-index: 1;
     font-size: 2rem;
+}
+
+.container h2 {
+    padding: 5px 20px;
+    text-shadow: 2px 2px 2px white;
+    color: #0b2e06;
+}
+.container > p {
+    color: rgb(15, 107, 12);
+    font-style: italic;
+}
+.content {
+    top: 100vh;
+}
+
+#mainQoute {
+}
+.content .realTalk {
+    background: linear-gradient(260deg, rgba(127, 127, 213, 0.685), rgba(134, 168, 231, 0.568), rgb(145, 234, 228));
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .realTalk .inRow {
+    display: flex;
+    flex-direction: row;
+    margin: 8px 4px;
+}
+.realTalk .inRow > *{
+    margin: 5px 15px;
+}
+
+
+
+
+/* Footer */
+.footer{
+    background: linear-gradient(260deg, rgba(106, 106, 175, 0.685), rgba(114, 142, 196, 0.568), rgb(116, 189, 184));
+    margin: auto;
+    width: 100%;
+}
+.footer>p{
+    text-align: center;
+    padding: 5px;
 }
