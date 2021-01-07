@@ -82,7 +82,6 @@ p {
     top: 0px;
     left: 0px;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -95,7 +94,6 @@ p {
     z-index: 1;
     font-size: 2rem;
 }
-
 .container h2 {
     padding: 5px 20px;
     text-shadow: 2px 2px 2px white;
@@ -115,7 +113,6 @@ p {
     /* margin-top: 30px; */
     flex-direction: column;
 }
-
 .inRow {
     display: flex;
     flex-direction: row;
@@ -126,8 +123,6 @@ p {
 .realTalk .inRow > * {
     margin: 5px 15px;
 }
-
-/* Footer */
 .footer {
     background: linear-gradient(260deg, rgba(106, 106, 175, 0.685), rgba(114, 142, 196, 0.568), rgb(116, 189, 184));
     margin: auto;
@@ -178,7 +173,7 @@ a > p {
     border-radius: 6px;
     /* transition: transform 3s ease; */
 }
-#about{
+#about {
     min-height: 5vh;
     height: auto;
 }
