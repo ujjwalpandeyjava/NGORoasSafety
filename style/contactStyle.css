@@ -82,11 +82,13 @@ p {
 
 
 /* Form */
-.form{
+.form{    
     justify-content: center;
     align-items: center;
-    padding: auto;
+    padding: 15px;
     width: 100%;
+    max-width: 830px;
+    margin: auto;
 }
 form, .group{
     position: relative;
@@ -107,6 +109,8 @@ form, .group{
     max-width: 550px;
     width: 75%;
     right: 40px;
+    border-radius: 5px;
+    background-color: #acd8edc7;
 }
 .form input,.form input:focus{
     border: none;
@@ -119,7 +123,6 @@ form>button{
     margin: auto;
     border: none;
     box-shadow: inset 0 0 4px 0 #f3efef, 0 0 2.5px 0 blue;;
-    /* border: 1px solid #7d1f7d; */
     display:block;
 }
 form > button:hover{
