@@ -110,28 +110,38 @@ p {
     background: linear-gradient(260deg, rgba(127, 127, 213, 0.685), rgba(134, 168, 231, 0.568), rgb(145, 234, 228));
     padding: 20px 30px;
     display: flex;
+    /* margin-top: 30px; */
     flex-direction: column;
 }
 
-.content .realTalk .inRow {
+ .inRow {
     display: flex;
     flex-direction: row;
     margin: 8px 4px;
 }
-.realTalk .inRow > *{
+.realTalk .inRow > * {
     margin: 5px 15px;
 }
 
-
-
-
 /* Footer */
-.footer{
+.footer {
     background: linear-gradient(260deg, rgba(106, 106, 175, 0.685), rgba(114, 142, 196, 0.568), rgb(116, 189, 184));
     margin: auto;
     width: 100%;
 }
-.footer>p{
+.footer > p {
     text-align: center;
     padding: 5px;
+}
+.whatToDoWhileCrossing,
+.whatToDoWhileDriving,
+.whatToDoWhileWalking{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.whatToDoImageLinks{
+    display: flex;
+    flex-direction: row;
+
 }
