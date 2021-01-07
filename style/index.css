@@ -17,6 +17,8 @@ body {
 .navbar ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
     align-items: center;
     justify-content: start;
 }
@@ -114,10 +116,12 @@ p {
     flex-direction: column;
 }
 
- .inRow {
+.inRow {
     display: flex;
     flex-direction: row;
     margin: 8px 4px;
+    flex-wrap: nowrap;
+    min-height: 48vh;
 }
 .realTalk .inRow > * {
     margin: 5px 15px;
@@ -135,13 +139,52 @@ p {
 }
 .whatToDoWhileCrossing,
 .whatToDoWhileDriving,
-.whatToDoWhileWalking{
+.whatToDoWhileWalking {
     width: 90%;
     margin: auto;
     height: auto;
 }
-.whatToDoImageLinks{
+.whatToDoImageLinks {
     display: flex;
     flex-direction: row;
-
+    padding: 11px;
+    background: linear-gradient(45deg, #a9ace4, #a4ddea);
+    justify-content: space-around;
+    text-align: center;
+    /* border: 1px dotted #e9e1dc; */
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+.individualWork {
+    width: 30%;
+    padding: 6px;
+    min-width: 200px;
+    margin: 10px 2px;
+    transition: transform 1s ease-in-out;
+    align-self: center;
+}
+.individualWork:hover {
+    transform: scale(1.15);
+}
+.individualWork a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+a > p {
+    font-family: cursive;
+}
+.individualWork > a > img {
+    border-radius: 6px;
+    /* transition: transform 3s ease; */
+}
+#about{
+    min-height: 5vh;
+    height: auto;
+}
+#about > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
