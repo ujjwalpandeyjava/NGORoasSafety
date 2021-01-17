@@ -5,10 +5,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-body{
+body {
     min-width: 469px;
     background: linear-gradient(260deg, rgba(127, 127, 213, 0.685), rgba(134, 168, 231, 0.568), rgb(145, 234, 228));
-
 }
 .header {
     position: relative;
@@ -80,9 +79,8 @@ p {
     padding: 20px;
 }
 
-
 /* Form */
-.form{    
+.form {
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -90,7 +88,8 @@ p {
     max-width: 830px;
     margin: auto;
 }
-form, .group{
+form,
+.group {
     position: relative;
     margin: 15px;
     width: auto;
@@ -101,32 +100,32 @@ form, .group{
     display: flex;
     justify-content: space-evenly;
 }
-.group span{
+.group span {
     display: inline-block;
     width: 18%;
 }
-.form input{
+.form input {
     max-width: 550px;
     width: 75%;
     right: 40px;
     border-radius: 5px;
-    background-color: #acd8edc7;
+    background-color: #cfe1e9c7;
 }
-.form input,.form input:focus{
+.form input,
+.form input:focus {
     border: none;
     outline: none;
     border-bottom: 1.4px solid blue;
 }
-form>button{
+form > button {
     padding: 5px 8px;
     background-color: #acd8ed;
     margin: auto;
     border: none;
-    box-shadow: inset 0 0 4px 0 #f3efef, 0 0 2.5px 0 blue;;
-    display:block;
+    box-shadow: inset 0 0 4px 0 #f3efef, 0 0 2.5px 0 blue;
+    display: block;
 }
-form > button:hover{
+form > button:hover {
     background-color: #8f808000;
     border: 1px solid blue;
-
 }
